@@ -53,7 +53,7 @@
           </li>
 
           <li class="nav-list-item">
-            <a href="#Contact" class="nav-link"> Contact </a>
+            <a href="#contact" class="nav-link"> Contact </a>
           </li>
         </ul>
       </nav>
@@ -83,7 +83,7 @@
             </li>
 
             <li class="nav-list-item">
-              <a href="#Contact" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -117,7 +117,7 @@
           <div class="hero-buttons">
             <a href="#Projects" class="primary-button"> View Projects </a>
 
-            <a href="#Contact" class="secondary-button"> Contact Me </a>
+            <a href="#contact" class="secondary-button"> Contact Me </a>
           </div>
         </div>
       </div>
@@ -483,90 +483,88 @@
     </div>
 
     <!-- CONTACT -->
+    <section id="contact" class="content-container"></section>
+    <form id="contact-form" class="form">
+      <h1>Contact Me</h1>
 
-    <div class="content-container">
-      <form id="contact-form" class="form">
-        <h1>Contact Me</h1>
+      <div
+        class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
+      >
+        <div class="label-input-group form-element-container">
+          <label for="name" class="form-label">Name</label>
 
-        <div
-          class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
-        >
-          <div class="label-input-group form-element-container">
-            <label for="name" class="form-label">Name</label>
-
-            <input
-              class="form-input-box"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              required
-            />
-          </div>
-
-          <div class="label-input-group form-element-container">
-            <label for="email" class="form-label">Email</label>
-
-            <input
-              class="form-input-box"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="your@email.com"
-              required
-            />
-          </div>
+          <input
+            class="form-input-box"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
         </div>
 
-        <div
-          class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
-        >
-          <div class="label-input-group form-element-container">
-            <label for="phone" class="form-label">Phone Number</label>
+        <div class="label-input-group form-element-container">
+          <label for="email" class="form-label">Email</label>
 
-            <input
-              class="form-input-box"
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="(555) 555-5555"
-            />
-          </div>
+          <input
+            class="form-input-box"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          />
+        </div>
+      </div>
 
-          <div class="label-input-group form-element-container">
-            <label for="inquiry" class="form-label">Inquiry Type</label>
+      <div
+        class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
+      >
+        <div class="label-input-group form-element-container">
+          <label for="phone" class="form-label">Phone Number</label>
 
-            <select class="form-input-box" id="inquiry" name="inquiry" required>
-              <option value="" selected disabled>Select an inquiry type</option>
-              <option value="collaboration">Collaboration</option>
-              <option value="internship">Internship</option>
-              <option value="networking">Networking</option>
-              <option value="general-question">General Question</option>
-            </select>
-          </div>
+          <input
+            class="form-input-box"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="(555) 555-5555"
+          />
         </div>
 
-        <label for="message" class="form-label">Message</label>
+        <div class="label-input-group form-element-container">
+          <label for="inquiry" class="form-label">Inquiry Type</label>
 
-        <textarea
-          class="form-textarea form-element-container"
-          id="message"
-          name="message"
-          rows="8"
-          placeholder="Type your message here..."
-          required
-        ></textarea>
-
-        <div
-          class="space-evenly-distributed-row-container form-buttons-container"
-        >
-          <input class="form-button" type="submit" value="Submit" />
-          <input class="form-button" type="reset" value="Reset" />
+          <select class="form-input-box" id="inquiry" name="inquiry" required>
+            <option value="" selected disabled>Select an inquiry type</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="internship">Internship</option>
+            <option value="networking">Networking</option>
+            <option value="general-question">General Question</option>
+          </select>
         </div>
+      </div>
 
-        <div id="form-message"></div>
-      </form>
-    </div>
+      <label for="message" class="form-label">Message</label>
+
+      <textarea
+        class="form-textarea form-element-container"
+        id="message"
+        name="message"
+        rows="8"
+        placeholder="Type your message here..."
+        required
+      ></textarea>
+
+      <div
+        class="space-evenly-distributed-row-container form-buttons-container"
+      >
+        <input class="form-button" type="submit" value="Submit" />
+        <input class="form-button" type="reset" value="Reset" />
+      </div>
+
+      <div id="form-message"></div>
+    </form>
 
     <!-- FOOTER -->
 
