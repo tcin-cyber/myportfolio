@@ -61,16 +61,6 @@
       <!-- Mobile Navbar -->
 
       <nav class="navbar small-screen-navbar">
-        <input
-          type="checkbox"
-          id="navbar-toggle-trigger"
-          class="navbar-toggle-trigger"
-        />
-
-        <label for="navbar-toggle-trigger" class="navbar-circular-icon-button">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-
         <div class="small-screen-navbar-element-container">
           <ul class="nav-list">
             <li class="nav-list-item">
@@ -171,7 +161,7 @@
             <div class="space-between-distributed-row-container">
               <h3>Programming Languages</h3>
 
-              <button class="close-popup-button">
+              <button class="close-popup-button" aria-label="Close popup">
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
@@ -204,7 +194,7 @@
             <div class="space-between-distributed-row-container">
               <h3>Web Development</h3>
 
-              <button class="close-popup-button">
+              <button class="close-popup-button" aria-label="Close popup">
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
@@ -234,7 +224,7 @@
             <div class="space-between-distributed-row-container">
               <h3>Tools & Technologies</h3>
 
-              <button class="close-popup-button">
+              <button class="close-popup-button" aria-label="Close popup">
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
@@ -277,7 +267,7 @@
               <div class="space-between-distributed-row-container">
                 <h3>Software Engineering</h3>
 
-                <button class="close-popup-button">
+                <button class="close-popup-button" aria-label="Close popup">
                   <i class="fa-solid fa-xmark"></i>
                 </button>
               </div>
@@ -307,7 +297,7 @@
               <div class="space-between-distributed-row-container">
                 <h3>Database Systems</h3>
 
-                <button class="close-popup-button">
+                <button class="close-popup-button" aria-label="Close popup">
                   <i class="fa-solid fa-xmark"></i>
                 </button>
               </div>
@@ -339,7 +329,7 @@
               <div class="space-between-distributed-row-container">
                 <h3>Web Applications</h3>
 
-                <button class="close-popup-button">
+                <button class="close-popup-button" aria-label="Close popup">
                   <i class="fa-solid fa-xmark"></i>
                 </button>
               </div>
@@ -381,7 +371,7 @@
             <div class="space-between-distributed-row-container">
               <h3>Student Planner</h3>
 
-              <button class="close-popup-button">
+              <button class="close-popup-button" aria-label="Close popup">
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
@@ -412,7 +402,7 @@
             <div class="space-between-distributed-row-container">
               <h3>Social Media BST</h3>
 
-              <button class="close-popup-button">
+              <button class="close-popup-button" aria-label="Close popup">
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
@@ -445,7 +435,7 @@
             <div class="space-between-distributed-row-container">
               <h3>Weather Dashboard</h3>
 
-              <button class="close-popup-button">
+              <button class="close-popup-button" aria-label="Close popup">
                 <i class="fa-solid fa-xmark"></i>
               </button>
             </div>
@@ -495,68 +485,82 @@
     <!-- CONTACT -->
 
     <div class="content-container">
-      <form id="Contact" class="form">
+      <form id="contact-form" class="form">
         <h1>Contact Me</h1>
 
         <div
           class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
         >
-          <p class="label-input-group form-element-container">
-            <span class="form-label"> Name </span>
+          <div class="label-input-group form-element-container">
+            <label for="name" class="form-label">Name</label>
 
-            <input class="form-input-box" type="text" id="name" name="name" />
-          </p>
+            <input
+              class="form-input-box"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
 
-          <p class="label-input-group form-element-container">
-            <span class="form-label"> Email </span>
+          <div class="label-input-group form-element-container">
+            <label for="email" class="form-label">Email</label>
 
             <input
               class="form-input-box"
               type="email"
               id="email"
               name="email"
+              placeholder="your@email.com"
+              required
             />
-          </p>
+          </div>
         </div>
 
         <div
           class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
         >
-          <p class="label-input-group form-element-container">
-            <span class="form-label"> Phone Number </span>
+          <div class="label-input-group form-element-container">
+            <label for="phone" class="form-label">Phone Number</label>
 
-            <input class="form-input-box" type="tel" id="phone" />
-          </p>
+            <input
+              class="form-input-box"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(555) 555-5555"
+            />
+          </div>
 
-          <p class="label-input-group form-element-container">
-            <span class="form-label"> Inquiry Type </span>
+          <div class="label-input-group form-element-container">
+            <label for="inquiry" class="form-label">Inquiry Type</label>
 
-            <select class="form-input-box" id="inquiry">
-              <option>Collaboration</option>
-
-              <option>Internship</option>
-
-              <option>Networking</option>
-
-              <option>General Question</option>
+            <select class="form-input-box" id="inquiry" name="inquiry" required>
+              <option value="" selected disabled>Select an inquiry type</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="internship">Internship</option>
+              <option value="networking">Networking</option>
+              <option value="general-question">General Question</option>
             </select>
-          </p>
+          </div>
         </div>
 
-        <label for="message" class="form-label"> Message </label>
+        <label for="message" class="form-label">Message</label>
 
         <textarea
           class="form-textarea form-element-container"
           id="message"
+          name="message"
           rows="8"
-        >
-        </textarea>
+          placeholder="Type your message here..."
+          required
+        ></textarea>
 
         <div
           class="space-evenly-distributed-row-container form-buttons-container"
         >
           <input class="form-button" type="submit" value="Submit" />
-
           <input class="form-button" type="reset" value="Reset" />
         </div>
 
