@@ -1,0 +1,227 @@
+/*GLOBAL STYLES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  color: #222;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 30px;
+}
+
+.dark-background-container {
+  background: #1b1f24;
+  color: white;
+}
+
+.clear-margin-top {
+  margin-top: 0;
+}
+
+.clear-margin-bottom {
+  margin-bottom: 25px;
+}
+
+/*NAVIGATION*/
+.navbar {
+  width: 100%;
+  background: #111827;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.large-screen-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  font-weight: 600;
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #60a5fa;
+}
+
+.section-below-navbar {
+  padding-top: 100px;
+}
+
+/*MOBILE NAVIGATION*/
+.small-screen-navbar {
+  display: none;
+}
+
+.navbar-toggle-trigger {
+  display: none;
+}
+
+.navbar-circular-icon-button {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: white;
+}
+
+.small-screen-navbar-element-container {
+  display: none;
+}
+
+/*HERO SECTION*/
+.space-evenly-distributed-row-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+
+.landing-image {
+  width: 320px;
+  height: 320px;
+
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.landing-text-container {
+  max-width: 600px;
+}
+
+.heading-1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.landing-text-container h2 {
+  color: #60a5fa;
+  margin-bottom: 20px;
+}
+
+.landing-text-container p {
+  margin-bottom: 30px;
+}
+
+/*HERO BUTTONS*/
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 14px 24px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.primary-button {
+  background: #2563eb;
+  color: white;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+.secondary-button {
+  border: 2px solid white;
+  color: white;
+}
+
+.secondary-button:hover {
+  background: white;
+  color: #111827;
+}
+
+/*SECTION HEADINGS*/
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/*CARD SECTION*/
+.card {
+  background: white;
+  color: #222;
+  border-radius: 15px;
+  padding: 30px;
+  width: 320px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h2 {
+  color: #2563eb;
+}
+
+.more-info-button {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.more-info-button:hover {
+  text-decoration: underline;
+}

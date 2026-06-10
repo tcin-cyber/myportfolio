@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Thang Cin Portfolio</title>
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Desktop Navbar -->
+
+      <nav class="navbar large-screen-navbar">
+        <h2 class="logo">Thang Cin</h2>
+
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="#About" class="nav-link"> About </a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#Skills" class="nav-link"> Skills </a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#Experience" class="nav-link"> Experience </a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#Projects" class="nav-link"> Projects </a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#Eduction" class="nav-link"> Eduction </a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#Contact" class="nav-link"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Navbar -->
+
+      <nav class="navbar small-screen-navbar">
+        <input
+          type="checkbox"
+          id="navbar-toggle-trigger"
+          class="navbar-toggle-trigger"
+        />
+
+        <label for="navbar-toggle-trigger" class="navbar-circular-icon-button">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <div class="small-screen-navbar-element-container">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#About" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#Skills" class="nav-link">Skills</a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#Experience" class="nav-link">Experience</a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#Projects" class="nav-link">Projects</a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#Eduction" class="nav-link">Eduction</a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#Contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="dark-background-container section-below-navbar">
+      <div
+        class="space-evenly-distributed-row-container vertically-stacked-mid-screen-container content-container"
+      >
+        <div class="landing-image-container">
+          <img
+            src="images/tcin@pdx.edu-758f93a9.jpg"
+            alt="Thang Cin"
+            class="landing-image"
+          />
+        </div>
+
+        <div class="landing-text-container">
+          <h1 class="heading-1">Thang Cin</h1>
+
+          <h2>Computer Science Student</h2>
+
+          <p>
+            Passionate about software engineering, web development, data
+            structures, and building applications that solve real-world
+            problems.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#Projects" class="primary-button"> View Projects </a>
+
+            <a href="#Contact" class="secondary-button"> Contact Me </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+
+      <div id="About" class="content-container">
+        <h1>About Me</h1>
+
+        <p>
+          I am a Computer Science student interested in software engineering,
+          full-stack development, databases, and user-centered design. My goal
+          is to develop applications that are efficient, maintainable, and
+          accessible while continuously improving my technical skills.
+        </p>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+
+    <div id="Skills" class="content-container">
+      <h1 class="clear-margin-bottom">Skills</h1>
+
+      <div
+        class="space-evenly-distributed-row-container vertically-stacked-mid-screen-container"
+      >
+        <!-- CARD 1 -->
+
+        <div class="card">
+          <div>
+            <h2 class="clear-margin-top">Programming Languages</h2>
+
+            <p>Experience using JavaScript, Python, C++, and SQL.</p>
+          </div>
+
+          <a class="more-info-button"> More Info </a>
+        </div>
+
+        <div class="popup-section-container">
+          <div class="popup-section">
+            <div class="space-between-distributed-row-container">
+              <h3>Programming Languages</h3>
+
+              <button class="close-popup-button">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <p>
+              JavaScript for web applications, Python for scripting and
+              automation, C++ for object-oriented development, and SQL for
+              relational databases.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="card">
+          <div>
+            <h2 class="clear-margin-top">Web Development</h2>
+
+            <p>
+              Building responsive and accessible websites using modern
+              technologies.
+            </p>
+          </div>
+
+          <a class="more-info-button"> More Info </a>
+        </div>
+
+        <div class="popup-section-container">
+          <div class="popup-section">
+            <div class="space-between-distributed-row-container">
+              <h3>Web Development</h3>
+
+              <button class="close-popup-button">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <p>
+              HTML5, CSS3, JavaScript, responsive design, accessibility
+              standards, and Bootstrap.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
